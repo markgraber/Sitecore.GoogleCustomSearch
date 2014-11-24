@@ -39,14 +39,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Jetstream.Business">
+      <HintPath>..\References\Jetstream\Jetstream.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="Jetstream.Search">
+      <HintPath>..\References\Jetstream\Jetstream.Search.dll</HintPath>
+    </Reference>
     <Reference Include="Jetstream.Website, Version=1.2.1.1592, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Jetstream.Website.dll</HintPath>
+      <HintPath>..\References\Jetstream\Jetstream.Website.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Lucene.Net, Version=2.9.4.1, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Lucene.Net.dll</HintPath>
+      <HintPath>..\References\Sitecore\Lucene.Net.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -55,7 +61,7 @@
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\References\Sitecore\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -110,16 +116,6 @@
     <Compile Include="sitecore modules\GSS\Searchbox.ascx.designer.cs">
       <DependentUpon>Searchbox.ascx</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Components\Jetstream.Business\Jetstream.Business.csproj">
-      <Project>{8E991BE6-42F4-435F-869C-4EB94387CA94}</Project>
-      <Name>Jetstream.Business</Name>
-    </ProjectReference>
-    <ProjectReference Include="Components\Jetstream.Search\Jetstream.Search.csproj">
-      <Project>{E8416217-E323-4DD6-B51F-058C5BBA7D2D}</Project>
-      <Name>Jetstream.Search</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
